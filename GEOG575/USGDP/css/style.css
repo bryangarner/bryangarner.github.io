@@ -19,7 +19,7 @@ body {
 	text-align: center;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.3) 0 20px 30px;
-	transform: translateY(-23px);
+	transform: translateY(-35px);
 }
 .range-slider {
 	width: 200px;
@@ -31,7 +31,7 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.3) 0 20px 30px;
 	font-weight: bold;
 	width: 280px;
-	transform: translateY(-23px);
+	transform: translateY(-35px);
 }
 #temporal-legend {
 	font-weight: bold;
