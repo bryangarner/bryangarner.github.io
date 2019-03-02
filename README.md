@@ -1,1 +1,0 @@
-# bryangarner.github.io
