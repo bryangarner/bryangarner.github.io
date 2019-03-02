@@ -277,7 +277,7 @@ function updateLegend(map, attribute) {
 	//create content for legend
 	var year = attribute.split("_")[1];
 	var content = "Gross Domestic Product in " + year;
-	var totalgdp = '<img class="usFlag" src="img/usFlag.png" alt="United States Flag">' + getTotal(map, attribute);
+	var totalgdp = '<img class="usFlag" src="img/USflag.png" alt="United States Flag">' + getTotal(map, attribute);
 	//replace legend content
 	$('#temporal-legend').html(content);
 	$('#temporal-legend-gdptotal').html(totalgdp);
