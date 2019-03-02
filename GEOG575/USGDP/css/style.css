@@ -52,7 +52,6 @@ body {
 	margin-left: -26px;
 }
 #reverse {
-    display: inline;
 	float: left;
 	background-color: Transparent;
 	border: none;
@@ -71,8 +70,7 @@ body {
 	cursor: default;
 }
 #forward {
-    display: inline;
-	float: right;
+	transform: translateY(-11px);
 	background-color: Transparent;
 	border: none;
 	cursor: pointer;
