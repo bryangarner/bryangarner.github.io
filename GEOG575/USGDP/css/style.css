@@ -11,7 +11,7 @@ body {
 	position: fixed;
 }
 .sequence-control-container {
-	width: 260px;
+	width: 270px;
 	height: 34px;
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 10px;
@@ -70,7 +70,7 @@ body {
 	cursor: default;
 }
 #forward {
-	transform: translateY(-11px);
+	float: right;
 	background-color: Transparent;
 	border: none;
 	cursor: pointer;
