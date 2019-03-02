@@ -20,7 +20,6 @@ body {
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.3) 0 20px 30px;
 	transform: translateY(-35px);
-    position: fixed;
 }
 .range-slider {
 	width: 200px;
@@ -53,12 +52,11 @@ body {
 	margin-left: -26px;
 }
 #reverse {
+    display: inline;
 	float: left;
 	background-color: Transparent;
-	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;
-	overflow: hidden;
 	outline: none;
 	font-size: 15px;
 	color: #4b4e51;
@@ -73,12 +71,11 @@ body {
 	cursor: default;
 }
 #forward {
+    display: inline;
 	float: right;
 	background-color: Transparent;
-	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;
-	overflow: hidden;
 	outline: none;
 	font-size: 15px;
 	color: #4b4e51;
