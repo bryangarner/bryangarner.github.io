@@ -20,6 +20,7 @@ body {
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.3) 0 20px 30px;
 	transform: translateY(-35px);
+    position: fixed;
 }
 .range-slider {
 	width: 200px;
