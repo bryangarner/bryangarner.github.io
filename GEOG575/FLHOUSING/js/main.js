@@ -14,11 +14,11 @@
         percent_severe_housing_problems: "The percentage of households with at least 1 or more of the following housing problems: housing unit lacks complete kitchen facilities, housing unit lacks complete plumbing facilities, household is severely overcrowded, and/or household is severely cost burdened."
 }
 var attrSource = {
-        percent_commute_over_30mins: "<a href='http://www.countyhealthrankings.org/' target='_blank'>Source: University of Wisconsin 2016</a>", 
-        average_travel_time_mins: "<a href='https://www.census.gov/programs-surveys/acs/' target='_blank'>Source: Census Bureau 2016</a>", 
-        median_property_value_dollars: "<a href='https://www.census.gov/programs-surveys/acs/' target='_blank'>Source: Census Bureau 2016</a>", 
-        percent_homeowners: "<a href='https://www.census.gov/programs-surveys/acs/' target='_blank'>Source: Census Bureau 2016</a>", 
-        percent_severe_housing_problems: "<a href='http://www.countyhealthrankings.org/' target='_blank'>Source: University of Wisconsin 2016</a>"
+        percent_commute_over_30mins: "Source: <a href='http://www.countyhealthrankings.org/' target='_blank'>University of Wisconsin 2016</a>", 
+        average_travel_time_mins: "Source: <a href='https://www.census.gov/programs-surveys/acs/' target='_blank'>Census Bureau 2016</a>", 
+        median_property_value_dollars: "Source: <a href='https://www.census.gov/programs-surveys/acs/' target='_blank'>Census Bureau 2016</a>", 
+        percent_homeowners: "Source: <a href='https://www.census.gov/programs-surveys/acs/' target='_blank'>Census Bureau 2016</a>", 
+        percent_severe_housing_problems: "Source: <a href='http://www.countyhealthrankings.org/' target='_blank'>University of Wisconsin 2016</a>"
 }
     //collect variables to size map based on window size
     var getWidth = parseInt(d3.select('#map').style('width')), 
