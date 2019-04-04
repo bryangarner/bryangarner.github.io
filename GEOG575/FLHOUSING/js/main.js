@@ -378,11 +378,14 @@ function setLabel(props){
     //label content
     var percent = expressed.includes("percent");
     var value = expressed.includes("value");
+    var minutes = expressed.includes("mins");
     var labelAttribute;
     if (percent == true){ 
               labelAttribute = "<h1>" + props[expressed].toLocaleString() + "%" + "</h1><b>" + attrName[expressed] + "</b>";
         }else if (value == true){ 
               labelAttribute = "<h1>" + "$" + props[expressed].toLocaleString() + "</h1><b>" + attrName[expressed] + "</b>";
+        }else if (minutes == true){ 
+              labelAttribute = "<h1>" + props[expressed].toLocaleString() + "min" + "</h1><b>" + attrName[expressed] + "</b>";
         }else{
              labelAttribute = "<h1>" + props[expressed].toLocaleString() + "</h1><b>" + attrName[expressed] + "</b>";
         }
