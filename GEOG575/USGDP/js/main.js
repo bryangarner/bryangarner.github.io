@@ -73,7 +73,8 @@ function createPopup(properties, attribute, layer, radius) {
 	popupContent += "<p><b>Year: </b>" + year + "<p><b>Gross Domestic Product: </b>$" + properties[attribute].toLocaleString() + " million</p>";
 	//replace the layer popup
 	layer.bindPopup(popupContent, {
-		offset: new L.Point(0, -radius)
+		offset: new L.Point(0, -radius),
+         closeButton: false
 	}).on({
 		mouseover: function(e) {
 			this.openPopup();
