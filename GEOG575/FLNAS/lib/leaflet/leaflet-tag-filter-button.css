@@ -150,3 +150,11 @@
 .leaflet-bar .tag-filter-tags-container .checkbox {
     white-space: nowrap;
 }
+
+.easy-button-button {
+  display: block !important;
+}
+
+.tag-filter-tags-container {
+  left: 30px;
+}
