@@ -1,0 +1,7 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.78403499999996,24.55916600000006]},"properties":{"OBJECTID_1":1,"OBJECTID":1,"LAT":24.559166,"LON":-81.784035,"NAME":"Key West"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.44730399999997,25.086500000000058]},"properties":{"OBJECTID_1":2,"OBJECTID":2,"LAT":25.0865,"LON":-80.447304,"NAME":"Key Largo"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.04027599999995,24.72638900000004]},"properties":{"OBJECTID_1":3,"OBJECTID":3,"LAT":24.726389,"LON":-81.040276,"NAME":"Marathon"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.61360899999994,24.93583300000006]},"properties":{"OBJECTID_1":4,"OBJECTID":4,"LAT":24.935833,"LON":-80.613609,"NAME":"Islamorada"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.36111499999998,24.68611100000004]},"properties":{"OBJECTID_1":5,"OBJECTID":5,"LAT":24.686111,"LON":-81.361115,"NAME":"Big Pine Key and the Lower Keys"}}
+]}

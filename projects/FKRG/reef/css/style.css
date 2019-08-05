@@ -1,0 +1,207 @@
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Palanquin', sans-serif;
+}
+#mapid {
+	float: left;
+	width: 100%;
+	height: 600px;
+}
+.hide {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+.sidepanel {
+	width: 25%;
+	height: 600px;
+	float: right;
+	overflow: auto;
+	overflow-x: hidden;
+	margin-left: -100vw;
+}
+#pano {
+	position: -webkit-sticky;
+	/* Safari */
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 40%;
+	margin-top: -70px;
+}
+#pano .btn {
+	white-space: nowrap;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: gray;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+}
+#pano .btn:hover {
+	background-color: #A9A9A9;
+	color: white;
+	font-size: 15px;
+    text-decoration: none;
+}
+.content {
+	float: right;
+}
+.title {
+	background-color: #EFEFEF;
+	position: -webkit-sticky;
+	/* Safari */
+	position: sticky;
+	top: 240px;
+	padding: 10px;
+}
+.info {
+	padding: 15px;
+}
+a:link {
+	text-decoration: none;
+	font-size: 12px;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: underline;
+	color: black;
+}
+.leaflet-tooltip.keys-labels {
+	background-color: transparent;
+	border: transparent;
+	box-shadow: none;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.leaflet-tooltip.layer-labels {
+	background-color: transparent;
+	border: transparent;
+	box-shadow: none;
+	font-weight: bold;
+	font-size: 0px;
+	color: black;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+/* width */
+
+.sidepanel::-webkit-scrollbar {
+	width: 5px;
+    display: block;
+}
+/* Track */
+
+.sidepanel::-webkit-scrollbar-track {
+	background: #e4e4e4;
+}
+/* Handle */
+
+.sidepanel::-webkit-scrollbar-thumb {
+	background: #BFBFBF;
+}
+/* Handle on hover */
+
+.sidepanel::-webkit-scrollbar-thumb:hover {
+	background: #919191;
+}
+.legend {
+	background-color: rgba(255, 255, 255, 1);
+	padding: 6px 8px;
+	border-radius: 5px;
+	border: 2px solid rgba(1, 1, 1, 0.2);
+	font-weight: bold;
+    background-clip: padding-box;
+    width: 140px;
+}
+.legend .circle {
+	fill-opacity: 1;
+	border-radius: 50%;
+	width: 11px;
+	height: 11px;
+	margin-top: 3px;
+}
+.legend .square {
+	border: 1px solid;
+}
+.legend h3 {
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 1.1em;
+}
+.legend span {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 10px 4px 0;
+}
+.legend label {
+	font-size: 0.8em;
+}
+.legend label:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.reefbtn {
+	white-space: nowrap;
+	background-color: #1e9cd7;
+	color: white;
+	font-weight: bold;
+	padding: 3px 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.reefbtn:hover {
+	background-color: #5abbe8;
+	color: white;
+	font-size: 13px;
+    text-decoration: none;
+}
+.center {
+	padding: 10px;
+	text-align: center;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  text-align: center;
+  padding: 8px;
+}
+.controlIcon{
+    text-align: center;
+}
+
+#mapid > div.leaflet-control-container > div.leaflet-modal.show > div.modal > div{
+    background-color: #1E9CD7;
+    color: white;
+}
