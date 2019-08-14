@@ -1,6 +1,6 @@
 body {
 	color: #333;
-	background-color: #fdfdfd;
+	background-color: #fff;
 }
 
 img {
@@ -8,17 +8,12 @@ img {
 }
 
 .container {
-	max-width: -webkit-calc(100% - (30px * 2));
-	max-width: calc(100% - (30px * 2));
+	max-width: -webkit-calc(100% - 60px);
+	max-width: calc(100% - 60px);
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 30px;
 	padding-left: 30px
-}
-.container:after {
-	content: "";
-	display: table;
-	clear: both
 }
 
 .projects .project-thumbnail {
@@ -29,13 +24,6 @@ img {
 	transition-property: transform;
 	transition-duration: 0.5s;
 	transform: translate(0px, -8px)
-}
-.projects .project-link {
-	position: relative
-}
-.projects .project-link img {
-	background-color: #eeeeee;
-	width: 500px
 }
 .projects .project-title {
 	font-family: 'Roboto', sans-serif;
