@@ -1,0 +1,62 @@
+body {
+	font: 300 16px/1.5 "Roboto Condensed", sans-serif;
+	color: #333;
+	background-color: #fdfdfd;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-feature-settings: "kern" 1;
+	-moz-font-feature-settings: "kern" 1;
+	-o-font-feature-settings: "kern" 1;
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column
+}
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.containers {
+	max-width: -webkit-calc(100% - (30px * 2));
+	max-width: calc(100% - (30px * 2));
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px
+}
+.wrapper:after {
+	content: "";
+	display: table;
+	clear: both
+}
+.project-thumbnail {
+	transition-property: transform;
+	transition-duration: 0.5s
+}
+.project-thumbnail:hover {
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transform: translate(0px, -8px)
+}
+.project-title {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 16px
+}
+@media screen and (max-width: 576px) {
+	 .project-title {
+		font-size: 12.8px
+	}
+}
+.project-subtitle {
+	text-align: center;
+	font-size: 12.8px;
+	margin-bottom: 20px
+}
+@media screen and (max-width: 576px) {
+	.project-subtitle {
+		font-size: 9.6px
+	}
+}
+
+
