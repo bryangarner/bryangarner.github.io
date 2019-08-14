@@ -7,7 +7,19 @@ img {
 	max-width: 100%;
 }
 
-
+.container {
+	max-width: -webkit-calc(100% - (30px * 2));
+	max-width: calc(100% - (30px * 2));
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px
+}
+.container:after {
+	content: "";
+	display: table;
+	clear: both
+}
 
 .projects .project-thumbnail {
 	transition-property: transform;
