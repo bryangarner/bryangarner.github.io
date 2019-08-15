@@ -1,22 +1,91 @@
-$(function() {
-    var $window = $(window),
-        $body = $("body"),
-        $modal = $(".modal"),
-        scrollDistance = 0;
+;(function () {
+	
+	'use strict';
 
-    $modal.on("show.bs.modal", function() {
-        // Get the scroll distance at the time the modal was opened
-        scrollDistance = $window.scrollTop();
 
-        // Pull the top of the body up by that amount
-        $body.css("top", scrollDistance * -1);
-    });
-});
 
-$modal.on("hidden.bs.modal", function() {
-    // Remove the negative top value on the body
-    $body.css("top", "");
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+			BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+			iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+			Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+			Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+			any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
 
-    // Set the window's scroll position back to what it was before the modal was opened
-    $window.scrollTop(scrollDistance);  
-});
+	var fullHeight = function() {
+
+		// if ( !isMobile.any() ) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function(){
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		// }
+
+	};
+
+	var parallax = function() {
+		$(window).stellar({
+			horizontalScrolling: false,
+			hideDistantElements: false, 
+			responsive: true
+
+		});
+	};
+
+
+
+
+	// Click outside of offcanvass
+	var mobileMenuOutsideClick = function() {
+
+		$(document).click(function (e) {
+	    var container = $("#fh5co-aside, .js-fh5co-nav-toggle");
+	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+	    	if ( $('body').hasClass('offcanvas') ) {
+
+    			$('body').removeClass('offcanvas');
+    			$('.js-fh5co-nav-toggle').removeClass('active');
+			
+	    	}
+	    	
+	    }
+		});
+
+		$(window).scroll(function(){
+			if ( $('body').hasClass('offcanvas') ) {
+
+    			$('body').removeClass('offcanvas');
+    			$('.js-fh5co-nav-toggle').removeClass('active');
+			
+	    	}
+		});
+
+	};
+
+	// Document on load.
+	$(function(){
+		fullHeight();
+		parallax();
+		testimonialCarousel();
+		contentWayPoint();
+		counterWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+	});
+
+
+}());
