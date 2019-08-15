@@ -48,8 +48,6 @@ img {
 		font-size: 9.6px
 	}
 }
-.modal { -webkit-overflow-scrolling: touch; 
-}
 .modal-content {
     position: static;
     width: 150%;
