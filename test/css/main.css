@@ -48,13 +48,6 @@ img {
 		font-size: 9.6px
 	}
 }
-.modal-content {
-    position: static;
-    width: 150%;
-    display: inline-block;
-    margin-left: -25%;
-}
-
 .modal-header {
    border-bottom: 0 none;
    padding: 0px;
@@ -66,55 +59,51 @@ img {
     color: #333;
 }
 
-.modal-title {
-    margin: 0;
-    font-size: 1.75rem;
-    line-height: 1.42857;
-    color: #333;
+
+.modal-open .modal {
+
+	top: 0;
+	bottom: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.modal-open .modal.fade .modal-dialog {
+
+	height: 100%;
+	margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: none;
+    -webkit-overflow-scrolling: touch;
+    transform: none;
+	max-width: none;
+	pointer-events: all;
+	padding: 10px;
+
+}
+
+.no-scroll, .no-scroll body {
+	
+	overflow: hidden;
+	
+}
+
+.modal-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.modal-footer {
+	
+	padding-bottom: 1.5rem;
+	
 }
 
 
-.modal-body {
-    position: relative;
-    padding: 15px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    color: #3d3d3d;
-}
-
-.modal-content img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #999999;
-}
-
-.project-description {
-    padding-top: 15px;
-    font-size: 14px;
-    color: #3d3d3d;
-}
-
-.project-details {
-    padding-bottom: 10px;
-    font-size: 13px;
-    color: #3d3d3d;
-}
-
-@media (min-width:100px) and (max-width:767px){
-    .modal-content {
-        width: 100% !important;
-        top: 50px;
-        position: relative;
-        margin: auto !important;
-    }
-
-    .modal-footer {
-        display: block;
-    }
-
-    .modal-content img {
-        width: 90%;
-        height: auto;
-        border: 1px solid #999999;
-    }
-}
