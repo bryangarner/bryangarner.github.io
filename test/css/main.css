@@ -1,6 +1,13 @@
 body {
 	color: #333;
 	background-color: #fff;
+    &.modal-open {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
 }
 
 img {
@@ -53,8 +60,6 @@ img {
     width: 150%;
     display: inline-block;
     margin-left: -25%;
-    overflow-y: scroll; /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch;
 }
 
 .modal-header {
@@ -119,7 +124,4 @@ img {
         height: auto;
         border: 1px solid #999999;
     }
-}
-body.modal-open {
-    overflow: hidden;
 }
