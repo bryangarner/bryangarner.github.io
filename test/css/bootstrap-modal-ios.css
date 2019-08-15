@@ -11,15 +11,21 @@
 }
 
 .modal-open .modal.fade .modal-dialog {
+
+	height: 100%;
+	margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-y: auto;
     overflow-x: none;
     -webkit-overflow-scrolling: touch;
     transform: none;
+	max-width: none;
 	pointer-events: all;
+	padding: 10px;
 
 }
 
@@ -29,5 +35,15 @@
 	
 }
 
+.modal-content {
+	
+	max-width: 500px;
+	margin: 0 auto;
 
+}
 
+.modal-footer {
+	
+	padding-bottom: 1.5rem;
+	
+}
