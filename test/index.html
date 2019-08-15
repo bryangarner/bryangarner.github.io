@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <div class="project-thumbnail"><a class="project-link" href="/NitratesCancer">
+                        <div class="project-thumbnail"><a class="project-link" data-toggle="modal" data-target="#NitratesCancer">
               <img src="img/projects/nitratescancer/home.jpg">
             </a>
                             <div class="project-title">Nitrates and Cancer in Wisconsin</div>
@@ -98,10 +98,12 @@
             </div>
             </div>
     <!-- Modals -->
+    <!-- Florida Keys Reef Guide -->
 <div class="modal fade" id="FKRGModal" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
+                            <h3 class="modal-title" id="FKRGModalLabel">Florida Keys Reef Guide</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -112,26 +114,23 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <a href="/FloridaKeysReefGuide" target="_blank"><img src="img/projects/floridakeysreefguide/home.jpg"></a>
+                                        <a href="/FloridaKeysReefGuide" target="_blank"><img src="img/projects/floridakeysreefguide/modal.jpg"></a>
                                     </div>
                                     
                                     <div class="col-md-4 ml-auto">
-                                        <h3 class="modal-title">Florida Keys Reef Guide
-                            
-                            </h3>
+
                                         <div class="project-details">
 
                                         <b>Data sources: </b>
                                         <p>
-                                            <a href="https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/" target="_blank">U.S. Fish and Wildlife Service</a>
+                                            <a href="https://www.fgdl.org/metadataexplorer/explorer.jsp" target="_blank">Florida Geographic Data Library</a>, <a href="https://catalog.data.gov/dataset/florida-keys-national-marine-sanctuary-boundary-polygon1e9c8" target="_blank">Data.gov</a>, <a href="https://floridakeys.noaa.gov/fknms_map/welcome.html" target="_blank">Noaa.gov</a>
                                         </p>
 
-                                        <b>Development languages: </b>
+                                        <b>Development libraries: </b>
                                         <p>
                                             <a href="http://leafletjs.com/" target="_blank">Leaflet</a>,
-                                            <a href="https://carto.com/developers/sql-api/">CARTO SQL API, based on PostgreSQL and PostGIS</a>,
+                                            <a href="https://pchen66.github.io/Panolens/" target="_blank">Panolens</a>,
                                             <a href="https://jquery.com/" target="_blank">jQuery</a>,
-                                            <a href="https://jqueryui.com/" target="_blank">jQuery UI</a>,
                                             JavaScript,
                                             HTML,
                                             CSS
@@ -139,14 +138,12 @@
                                         
                                         <b>Software used: </b>
                                         <p>
-                                            <a href="https://carto.com/">CARTO</a>,
-                                            <a href="https://github.com/" target="_blank">GitHub</a>,
                                             <a href="http://brackets.io/" target="_blank">Brackets</a>,
-                                            <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a>,
-                                            <a href="http://www.arcgis.com/index.html" target="_blank">ArcGIS Online</a>
+                                            <a href="https://github.com/" target="_blank">GitHub</a>,
+                                            <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a>
                                         </p>
                                         
-                                        <p><i>Completed November 2018</i></p>                                         
+                                        <p><i>Completed August 2019</i></p>                                         
                                         </div>
 
                                     </div>
@@ -156,11 +153,11 @@
 
                                         <div class="project-description">
 
-                                            <p>This site is an interactive visitor map of the J.N. "Ding" Darling National Wildlife Refuge in Sanibel, Florida. The map is focused on the themes of general tourism and ecotourism and has a mobile-friendly layout that is compatible with any desktop and mobile devices.
+                                            <br><p>The goal of this project was to create an interactive web map that allowed users to explore well known and established coral reef sites within the Florida Keys National Marine Sanctuary. The interactive map was an effort to modernize the many static map resources that can be found scattered across the internet. One key aspect of the modernization was to incorporate a mechanism to allow users to view each reef site or marine sanctuary zone in a 360-degree environment. In addition, give the users an opportunity to read information about said reef. The intended audience for this web map ranges from first time reef explorers to committed environmentalists. This web map is nested in a larger pseudo organization’s website called the Florida Keys Reef Guide. This web page provides users with condensed, organized, tips that at a minimum if abided by, will ensure the reefs will be better taken care of for the future. The webpage also includes links to organizations whose primary mission is to care for and educate about coral reefs and coral reefs health.</p>
 
-                                            <p>Users can click any feature to get more information, filter the points of interest by category or location, view wildlife observations submitted by other visitors, and (when connected to an active CARTO API Key) submit their own sightings. Users within the park and the immediately surrounding area can also see their current location on the map, filter the points of interest to those within 1/2 mile of their current location, and (when connected to an active CARTO API Key) submit wildlife observations at their current location.</p>       
+                                            <p>Users can search for specific features by name or click any feature to get more infomration pertaining to the area. Users also have the ability to view reefs and marine zone areas in a 360-degree environment.</p>       
 
-                                            <p>The site was developed in Leaflet, using CARTO as the spatial database and PostgreSQL and PostGIS from the CARTO SQL API  to query the database. It is based on Boilerplate HTML and Bootstrap, with user interface elements from jQuery and various Leaflet plugins.</p>
+                                            <p>The site was developed with Leaflet for the mapping component along with Panolens for the 360-degree photo viewer. Additional leaflet plugins were also used for the search and the baselayer toggle functions.</p>
                                            
                                         </div>
 
@@ -171,8 +168,80 @@
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"><a href="https://skeetidot.github.io/ding-darling-nwr/" target="_blank">View the Site</a></button>
-                            <button type="button" class="btn btn-secondary"><a href="https://www.youtube.com/watch?v=JK6WJg-0xEg" target="_blank">View a Demo</a></button>
+                            <button type="button" class="btn btn-secondary"><a href="/FloridaKeysReefGuide" target="_blank">View Project</a></button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <!-- Nitrates and Cancer in Wisconsin -->
+<div class="modal fade" id="NitratesCancer" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="NitratesCancerModalLabel">Nitrates and Cancer in Wisconsin</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <a href="/NitratesCancer" target="_blank"><img src="img/projects/nitratescancer/modal.jpg"></a>
+                                    </div>
+                                    
+                                    <div class="col-md-4 ml-auto">
+
+                                        <div class="project-details">
+
+                                        <b>Data sources: </b>
+                                        <p>
+                                            Wisconsin Department of Natural Resources, provided by <a href="https://geography.wisc.edu/gis/" target="_blank">UW-Madison GIS Professional Programs</a>
+                                        </p>
+
+                                        <b>Development libraries: </b>
+                                        <p>
+                                            <a href="http://leafletjs.com/" target="_blank">Leaflet</a>, 
+                                            <a href="http://turfjs.org/" target="_blank">Turf</a>,
+                                            <a href="https://simplestatistics.org/" target="_blank">Simple Statistics</a>,
+                                            <a href="https://jquery.com/" target="_blank">jQuery</a>,
+                                            JavaScript,
+                                            HTML,
+                                            CSS
+                                        </p>
+                                        
+                                        <b>Software used: </b>
+                                        <p>
+                                            <a href="http://brackets.io/" target="_blank">Brackets</a>,
+                                            <a href="https://github.com/" target="_blank">GitHub</a>,
+                                            <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a>
+                                        </p>
+                                        
+                                        <p><i>Completed June 2019</i></p>                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 ml-auto">
+
+                                        <div class="project-description">
+
+                                            <br><p>Talk about project here.</p>
+                                           
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"><a href="/NitratesCancer" target="_blank">View Project</a></button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
