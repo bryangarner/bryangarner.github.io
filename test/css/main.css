@@ -3,6 +3,10 @@ body {
 	background-color: #fff;
 }
 
+body.noScroll { /* ...or body.dialogShowing */
+  overflow: hidden;
+}
+
 img {
 	max-width: 100%;
 }
