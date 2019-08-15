@@ -1,3 +1,6 @@
+html {
+  -webkit-overflow-scrolling: touch;
+}
 body {
 	color: #333;
 	background-color: #fff;
