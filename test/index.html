@@ -1,245 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>title goes here</title>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>title goes here</title>
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
-        <div class="container">
-            <div class="projects">
-                <div><h1>Test</h1></div>
-                <div class="row">
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-blue project-thumbnail"><a data-toggle="modal" data-target="#FKRGModal">
-              <img draggable="false" src="img/projects/floridakeysreefguide/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Florida Keys Reef Guide</p><p class="project-subtitle">An immersive interactive resource for the Florida Keys National Marine Zone Sanctuary</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-red project-thumbnail"><a data-toggle="modal" data-target="#NitratesCancer">
-              <img draggable="false" src="img/projects/nitratescancer/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Nitrates and Cancer in Wisconsin</p><p class="project-subtitle">A spatial analysis of well nitrates and cancer occurrences in Wisconsin</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-yellow project-thumbnail"><a href="/LakeManateeStatePark">
-              <img draggable="false" src="img/projects/lakemanateestatepark/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Lake Manatee State Park Visitor Map</p><p class="project-subtitle">A responsive map of Lake Manatee State Park in Bradenton, Florida</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-purple project-thumbnail"><a href="/UnitedStatesGDP">
-              <img draggable="false" src="img/projects/unitedstatesgdp/home.jpg">
-            </a>
-                        <div class="bottom-left"><p class="project-title">United States Gross Domestic Product</p><p class="project-subtitle">An interactive spatiotemporal visualization of the United States' GDP</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-pink project-thumbnail"><a href="/D3FLHOUSING">
-              <img draggable="false" src="img/projects/d3flhousing/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Housing and Living by Florida Counties</p><p class="project-subtitle">An overview of housing in Florida using D3</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-dark project-thumbnail"><a href="/NASFlorida">
-              <img draggable="false" src="img/projects/nasflorida/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Nonindigenous Aquatic Species of Florida</p><p class="project-subtitle">A responsive map showing the distribution of non-indigenous aquatic species in Florida</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-watermelon project-thumbnail"><a href="">
-              <img draggable="false" src="img/projects/operational/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Operational</p><p class="project-subtitle">A Mapbox tileset style inspired by Ursa Space Systems</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-blue project-thumbnail"><a href="">
-              <img draggable="false" src="img/projects/tourofchile/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Tour of Chile</p><p class="project-subtitle">A terrain map of a proposed cycling race route in Chile</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-green project-thumbnail"><a href="">
-              <img draggable="false" src="img/projects/educationalinequality/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Educational Inequality</p><p class="project-subtitle">An infographic highlighting educational inequalities in Florida</p></div>
-                        </div>
-                    </div>
-                    <div class="space col-6 col-md-4 col-lg-3">
-                        <div class="bg-img-purple project-thumbnail"><a href="">
-              <img draggable="false" src="img/projects/geoappprototype/home.jpg">
-            </a>
-                            <div class="bottom-left"><p class="project-title">Geogander</p><p class="project-subtitle">A demonstration video of a geospatial mobile application prototype</p></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-    <!-- Modals -->
-    <!-- Florida Keys Reef Guide -->
-<div class="modal fade" id="FKRGModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title" id="FKRGModalLabel">Florida Keys Reef Guide</h2>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <a href="/FloridaKeysReefGuide" target="_blank"><img src="img/projects/floridakeysreefguide/modal.jpg"></a>
-                                    </div>
-                                    
-                                    <div class="col-md-4 ml-auto">
-
-                                        <div class="project-details">
-
-                                        <b>Data sources: </b>
-                                        <p>
-                                            <a href="https://www.fgdl.org/metadataexplorer/explorer.jsp" target="_blank">Florida Geographic Data Library</a>, <a href="https://catalog.data.gov/dataset/florida-keys-national-marine-sanctuary-boundary-polygon1e9c8" target="_blank">Data.gov</a>, <a href="https://floridakeys.noaa.gov/fknms_map/welcome.html" target="_blank">Noaa.gov</a>
-                                        </p>
-
-                                        <b>Development libraries: </b>
-                                        <p>
-                                            <a href="http://leafletjs.com/" target="_blank">Leaflet</a>,
-                                            <a href="https://pchen66.github.io/Panolens/" target="_blank">Panolens</a>,
-                                            <a href="https://jquery.com/" target="_blank">jQuery</a>,
-                                            JavaScript,
-                                            HTML,
-                                            CSS
-                                        </p>
-                                        
-                                        <b>Software used: </b>
-                                        <p>
-                                            <a href="http://brackets.io/" target="_blank">Brackets</a>,
-                                            <a href="https://github.com/" target="_blank">GitHub</a>,
-                                            <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a>
-                                        </p>
-                                        
-                                        <p><i>Completed August 2019</i></p>                                         
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 ml-auto">
-
-                                        <div class="project-description">
-
-                                            <br><p>The goal of this project was to create an interactive web map that allowed users to explore well known and established coral reef sites within the Florida Keys National Marine Sanctuary. The interactive map was an effort to modernize the many static map resources that can be found scattered across the internet. One key aspect of the modernization was to incorporate a mechanism to allow users to view each reef site or marine sanctuary zone in a 360-degree environment. In addition, give the users an opportunity to read information about said reef. The intended audience for this web map ranges from first time reef explorers to committed environmentalists. This web map is nested in a larger pseudo organization’s website called the Florida Keys Reef Guide. This web page provides users with condensed, organized, tips that at a minimum if abided by, will ensure the reefs will be better taken care of for the future. The webpage also includes links to organizations whose primary mission is to care for and educate about coral reefs and coral reefs health.</p>
-
-                                            <p>Users can search for specific features by name or click any feature to get more infomration pertaining to the area. Users also have the ability to view reefs and marine zone areas in a 360-degree environment.</p>       
-
-                                            <p>The site was developed with Leaflet for the mapping component along with Panolens for the 360-degree photo viewer. Additional leaflet plugins were also used for the search and the baselayer toggle functions.</p>
-                                           
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="button"><a href="/FloridaKeysReefGuide" target="_blank">View Project</a></button>
-                            <button type="button" class="button" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-      <!-- Nitrates and Cancer in Wisconsin -->
-<div class="modal fade" id="NitratesCancer" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title" id="NitratesCancerModalLabel">Nitrates and Cancer in Wisconsin</h2>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <a href="/NitratesCancer" target="_blank"><img src="img/projects/nitratescancer/modal.jpg"></a>
-                                    </div>
-                                    
-                                    <div class="col-md-4 ml-auto">
-
-                                        <div class="project-details">
-
-                                        <b>Data sources: </b>
-                                        <p>
-                                            Wisconsin Department of Natural Resources, provided by <a href="https://geography.wisc.edu/gis/" target="_blank">UW-Madison GIS Professional Programs</a>
-                                        </p>
-
-                                        <b>Development libraries: </b>
-                                        <p>
-                                            <a href="http://leafletjs.com/" target="_blank">Leaflet</a>, 
-                                            <a href="http://turfjs.org/" target="_blank">Turf</a>,
-                                            <a href="https://simplestatistics.org/" target="_blank">Simple Statistics</a>,
-                                            <a href="https://jquery.com/" target="_blank">jQuery</a>,
-                                            JavaScript,
-                                            HTML,
-                                            CSS
-                                        </p>
-                                        
-                                        <b>Software used: </b>
-                                        <p>
-                                            <a href="http://brackets.io/" target="_blank">Brackets</a>,
-                                            <a href="https://github.com/" target="_blank">GitHub</a>,
-                                            <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a>
-                                        </p>
-                                        
-                                        <p><i>Completed June 2019</i></p>                                            
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 ml-auto">
-
-                                        <div class="project-description">
-
-                                            <br><p>Talk about project here.</p>
-                                           
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="button"><a href="/NitratesCancer" target="_blank">View Project</a></button>
-                            <button type="button" class="button" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>            
+	<div class="container">
+		<div class="projects">
+			<div>
+				<h1>Test</h1>
+			</div>
+			<div class="row">
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-blue project-thumbnail">
+						<a data-target="#FKRGModal" data-toggle="modal"><img draggable="false" src="img/projects/floridakeysreefguide/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Florida Keys Reef Guide</p>
+							<p class="project-subtitle">An immersive interactive resource for the Florida Keys National Marine Zone Sanctuary</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-red project-thumbnail">
+						<a data-target="#NitratesCancer" data-toggle="modal"><img draggable="false" src="img/projects/nitratescancer/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Nitrates and Cancer in Wisconsin</p>
+							<p class="project-subtitle">A spatial analysis of well nitrates and cancer occurrences in Wisconsin</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-yellow project-thumbnail">
+						<a data-target="#LakeManateeStatePark" data-toggle="modal"><img draggable="false" src="img/projects/lakemanateestatepark/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Lake Manatee State Park Visitor Map</p>
+							<p class="project-subtitle">A responsive map of Lake Manatee State Park in Bradenton, Florida</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-purple project-thumbnail">
+						<a data-target="#UnitedStatesGrossDomesticProduct" data-toggle="modal"><img draggable="false" src="img/projects/unitedstatesgdp/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">United States Gross Domestic Product</p>
+							<p class="project-subtitle">An interactive spatiotemporal visualization of the United States' GDP</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-pink project-thumbnail">
+						<a data-target="#D3FLHOUSING" data-toggle="modal"><img draggable="false" src="img/projects/d3flhousing/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Housing and Living by Florida Counties</p>
+							<p class="project-subtitle">An overview of housing in Florida using D3</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-dark project-thumbnail">
+						<a data-target="#NASFlorida" data-toggle="modal"><img draggable="false" src="img/projects/nasflorida/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Nonindigenous Aquatic Species of Florida</p>
+							<p class="project-subtitle">A responsive map showing the distribution of non-indigenous aquatic species in Florida</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-watermelon project-thumbnail">
+						<a data-target="#Operational" data-toggle="modal"><img draggable="false" src="img/projects/operational/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Operational</p>
+							<p class="project-subtitle">A Mapbox tileset style inspired by Ursa Space Systems</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-blue project-thumbnail">
+						<a data-target="#TourOfChile" data-toggle="modal"><img draggable="false" src="img/projects/tourofchile/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Tour of Chile</p>
+							<p class="project-subtitle">A terrain map of a proposed cycling race route in Chile</p>
+						</div>
+					</div>
+				</div>
+				<div class="space col-6 col-md-4 col-lg-3">
+					<div class="bg-img-green project-thumbnail">
+						<a data-target="#Geogander" data-toggle="modal"><img draggable="false" src="img/projects/geoappprototype/home.jpg"></a>
+						<div class="bottom-left">
+							<p class="project-title">Geogander</p>
+							<p class="project-subtitle">A demonstration video of a geospatial mobile application prototype</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- Modals -->
+	<!-- Florida Keys Reef Guide -->
+	<div aria-hidden="true" class="modal fade" id="FKRGModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="FKRGModalLabel">Florida Keys Reef Guide</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="/FloridaKeysReefGuide" target="_blank"><img src="img/projects/floridakeysreefguide/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p><a href="https://www.fgdl.org/metadataexplorer/explorer.jsp" target="_blank">Florida Geographic Data Library</a>, <a href="https://catalog.data.gov/dataset/florida-keys-national-marine-sanctuary-boundary-polygon1e9c8" target="_blank">Data.gov</a>, <a href="https://floridakeys.noaa.gov/fknms_map/welcome.html" target="_blank">Noaa.gov</a></p><b>Development libraries:</b>
+									<p><a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="https://pchen66.github.io/Panolens/" target="_blank">Panolens</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, JavaScript, HTML, CSS</p><b>Software used:</b>
+									<p><a href="http://brackets.io/" target="_blank">Brackets</a>, <a href="https://github.com/" target="_blank">GitHub</a>, <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a></p>
+									<p><i>Completed August 2019</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>The goal of this project was to create an interactive web map that allowed users to explore well known and established coral reef sites within the Florida Keys National Marine Sanctuary. The interactive map was an effort to modernize the many static map resources that can be found scattered across the internet. One key aspect of the modernization was to incorporate a mechanism to allow users to view each reef site or marine sanctuary zone in a 360-degree environment. In addition, give the users an opportunity to read information about said reef. The intended audience for this web map ranges from first time reef explorers to committed environmentalists. This web map is nested in a larger pseudo organization’s website called the Florida Keys Reef Guide. This web page provides users with condensed, organized, tips that at a minimum if abided by, will ensure the reefs will be better taken care of for the future. The webpage also includes links to organizations whose primary mission is to care for and educate about coral reefs and coral reefs health.</p>
+									<p>Users can search for specific features by name or click any feature to get more infomration pertaining to the area. Users also have the ability to view reefs and marine zone areas in a 360-degree environment.</p>
+									<p>The map was developed with Leaflet for the mapping component along with Panolens for the 360-degree photo viewer. Additional leaflet plugins were also used for the search and the baselayer toggle functions.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="/FloridaKeysReefGuide" target="_blank"><button class="button" type="button">View Project</button></a> <button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- Nitrates and Cancer in Wisconsin -->
+	<div aria-hidden="true" class="modal fade" id="NitratesCancer" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="NitratesCancerModalLabel">Nitrates and Cancer in Wisconsin</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="/NitratesCancer" target="_blank"><img src="img/projects/nitratescancer/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p>Wisconsin Department of Natural Resources, provided by <a href="https://geography.wisc.edu/gis/" target="_blank">UW-Madison GIS Professional Programs</a></p><b>Development libraries:</b>
+									<p><a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="http://turfjs.org/" target="_blank">Turf</a>, <a href="https://simplestatistics.org/" target="_blank">Simple Statistics</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, JavaScript, HTML, CSS</p><b>Software used:</b>
+									<p><a href="http://brackets.io/" target="_blank">Brackets</a>, <a href="https://github.com/" target="_blank">GitHub</a>, <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a></p>
+									<p><i>Completed June 2019</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>The goal of this project is to use Inverse Distance Weighted spatial interpolation and Ordinary Least Squares linear regression to examine the relationship between nitrate concentrations in water wells and cancer rates in the state of Wisconsin.</p>
+									<p>Users can use the slider controls to select a distance decay weight to use for the spatial interpolation and the hexbin size in kilometers.</p>
+									<p>The map was developed with Leaflet, using Turf for the geoprocessing and Simple Statistics to run the linear regression.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="/NitratesCancer" target="_blank"><button class="button" type="button">View Project</button></a> <button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- Lake Manatee State Park Visitor Map -->
+	<div aria-hidden="true" class="modal fade" id="LakeManateeStatePark" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="LakeManateeStateParkrModalLabel">Lake Manatee State Park Visitor Map</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="/LakeManateeStatePark" target="_blank"><img src="img/projects/lakemanateestatepark/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p>Florida Department of Environmental Protection, provided by <a href="http://publicfiles.dep.state.fl.us/OTIS/GIS/data/" target="_blank">Office of Technology and Information Services</a></p><b>Development libraries:</b>
+									<p><a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, JavaScript, HTML, CSS</p><b>Software used:</b>
+									<p><a href="http://brackets.io/" target="_blank">Brackets</a>, <a href="https://github.com/" target="_blank">GitHub</a>, <a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a> <a href="https://carto.com/" target="_blank">CARTO</a></p>
+									<p><i>Completed July 2019</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>The goal of this project was to create a mobile-friendly web application for tourists visiting the Lake Manatee Sate Park.</p>
+									<p>This application was built with four main features, the ability for users to bookmark points within the park, geolocate their device, submit a comment to the database, and filter the comments on the map. The data is hosted on a CARTO database being manipulated using php and sql.</p>
+									<p>The map was developed with Leaflet.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="/LakeManateeStatePark" target="_blank"><button class="button" type="button">View Project</button></a><button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- United States Gross Domestic Product -->
+	<div aria-hidden="true" class="modal fade" id="UnitedStatesGrossDomesticProduct" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="UnitedStatesGrossDomesticProductModalLabel">United States Gross Domestic Product</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="/UnitedStatesGDP" target="_blank"><img src="img/projects/unitedstatesgdp/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p><a href="https://www.bea.gov/data/gdp/gdp-state" target="_blank">U.S. Bureau of Economic Analysis (BEA)</a></p><b>Development libraries:</b>
+									<p><a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, JavaScript, HTML, CSS</p><b>Software used:</b>
+									<p><a href="http://brackets.io/" target="_blank">Brackets</a>, <a href="https://github.com/" target="_blank">GitHub</a>, <a href="https://github.com/" target="_blank">Microsoft Excel</a></p>
+									<p><i>Completed March 2019</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>This Leaflet web map displays the United States Gross Domestic Product from 1997 to 2017.</p>
+									<p>This spatiotemporal application has one main control that can be played or manipulated manually, allowing one to visualize the GDP via proportional symbology changes overtime.</p>
+									<p>This was an introductory project to the Leaflet JavaScript Library.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="/UnitedStatesGDP" target="_blank"><button class="button" type="button">View Project</button></a> <button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- Housing and Living by Florida Counties -->
+	<div aria-hidden="true" class="modal fade" id="D3FLHOUSING" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="D3FLHOUSINGModalLabel">Housing and Living by Florida Counties</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="/D3FLHOUSING" target="_blank"><img src="img/projects/d3flhousing/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p><a href="https://www.countyhealthrankings.org/" target="_blank">University of Wisconsin County Health Rankings 2016</a>, <a href="https://www.census.gov/programs-surveys/acs/" target="_blank">Census Bureau ACS 5-year Estimate 2016</a></p><b>Development libraries:</b>
+									<p><a href="https://d3js.org/" target="_blank">D3</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, JavaScript, HTML, CSS</p><b>Software used:</b>
+									<p><a href="http://brackets.io/" target="_blank">Brackets</a>, <a href="https://github.com/" target="_blank">GitHub</a>, <a href="https://github.com/" target="_blank">Microsoft Excel</a></p>
+									<p><i>Completed April 2019</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>This is an overview of data pertaining to housing and living in Florida by county looking at commuting, property values, homeowner percentages and housing problem data.</p>
+									<p>D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document.</p>
+									<p>This was an introductory project to the D3(data driven documents) library.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="/D3FLHOUSING" target="_blank"><button class="button" type="button">View Project</button></a><button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- NAS Florida -->
+	<div aria-hidden="true" class="modal fade" id="NASFlorida" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="NASFloridaModalLabel">Nonindigenous Aquatic Species of Florida</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="/NASFlorida" target="_blank"><img src="img/projects/nasflorida/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p><a href="https://nas.er.usgs.gov/default.aspx" target="_blank">USGS NAS Database</a></p><b>Development libraries:</b>
+									<p><a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="https://d3js.org/" target="_blank">D3</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, JavaScript, HTML, CSS</p><b>Software used:</b>
+									<p><a href="http://brackets.io/" target="_blank">Brackets</a>, <a href="https://github.com/" target="_blank">GitHub</a></p>
+									<p><i>Completed May 2019</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>This is a responsive and interactive map showing the distribution of non-indigenous aquatic species in the state of Florida.</p>
+									<p>This project aims to educate and provide resources for individuals interested in aquatic invasive species of Florida.</p>
+									<p>The map was developed with Leaflet and D3.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="/NASFlorida" target="_blank"><button class="button" type="button">View Project</button></a><button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- Operational -->
+	<div aria-hidden="true" class="modal fade" id="Operational" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="OperationalModalLabel">Operational</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="https://api.mapbox.com/styles/v1/bryangarner/cjp8m4pga7tym2snp5fv3aapv.html?fresh=true&title=true&access_token=pk.eyJ1IjoiYnJ5YW5nYXJuZXIiLCJhIjoiY2pqNGxvOWw1MTlyOTN3cDZoanhnOG9tdyJ9.EEUHDCVqGagl9EnsZ9TJ8g#4.36/31.84/-92.36" target="_blank"><img src="img/projects/operational/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p><a href="https://www.mapbox.com/data-products/" target="_blank">Mapbox Data Products</a></p><b>Development tools:</b>
+									<p><a href="https://www.mapbox.com/mapbox-studio/" target="_blank">Mapbox Studio</a></p><b>Software used:</b>
+									<p><a href="https://github.com/" target="_blank">GitHub</a></p>
+									<p><i>Completed Dec 2018</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>A quick introduction to Mapbox and Mapbox Studio. I took inspiration from an Ithaca, NY based company called Ursa Space Systems.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="https://api.mapbox.com/styles/v1/bryangarner/cjp8m4pga7tym2snp5fv3aapv.html?fresh=true&title=true&access_token=pk.eyJ1IjoiYnJ5YW5nYXJuZXIiLCJhIjoiY2pqNGxvOWw1MTlyOTN3cDZoanhnOG9tdyJ9.EEUHDCVqGagl9EnsZ9TJ8g#4.36/31.84/-92.36" target="_blank"><button class="button" type="button">View Project</button></a> <button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- Tour of Chile -->
+	<div aria-hidden="true" class="modal fade" id="TourOfChile" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="TourOfChileModalLabel">Tour Of Chile</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="img/projects/tourofchile/TourOfChile.pdf" target="_blank"><img src="img/projects/tourofchile/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Data sources:</b>
+									<p><a href="http://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-graticules" target="_blank">Natural Earth</a>, <a href="http://www.viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org15.htm" target="_blank">Viewfinder Panoramas</a>, <a href="http://www.fao.org/countryprofiles/data-sources/en/" target="_blank">UN Food and Agriculture Organization</a></p><b>Software used:</b>
+									<p><a href="http://desktop.arcgis.com/en/" target="_blank">ArcGIS Desktop</a>, <a href="https://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>, <a href="https://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a></p>
+									<p><i>Completed Oct 2018</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>This print map was created as part of a graphic design in cartography course. The challenge for this course included planning and digitizing a real-world route, and then combining it with a terrain basemap that fit with the challenge scenario.</p>
+									<p>The vector post-processing was conducted in Illustrator. In order to make it more realistic and appealing, Photoshop was used to adjust the terrain features, tweak colors and add textures according to the land cover.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="img/projects/tourofchile/TourOfChile.pdf" target="_blank"><button class="button" type="button">View Project</button></a> <button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!-- Geogander -->
+	<div aria-hidden="true" class="modal fade" id="Geogander" role="dialog" tabindex="-1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="GeoganderModalLabel">Geogander</h2><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<a href="img/projects/geoappprototype/GeoAppPrototype.mp4" target="_blank"><img src="img/projects/geoappprototype/modal.jpg"></a>
+							</div>
+							<div class="col-md-4 ml-auto">
+								<div class="project-details">
+									<b>Software used:</b>
+									<p><a href="https://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>, <a href="https://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>, <a href="https://www.adobe.com/products/aftereffects.html" target="_blank">Adobe After Effects</a>, <a href="https://www.invisionapp.com/studio" target="_blank">InVision Studio</a></p>
+									<p><i>Completed Sept 2017</i></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ml-auto">
+								<div class="project-description">
+									<br>
+									<p>This is a prototype created to visualize a proposed geospatial app called Geogander. The idea behind this project is to rapidly view a simulated end product to get the look, feel, and idea across to an audience.</p>
+									<p>Mock images and animations were created using Illustrator and Photoshop, later imported into InVision Studio to simulate a mobile application environment. Recorded with QuickTime and edited using Adobe After Effects.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="img/projects/geoappprototype/GeoAppPrototype.mp4" target="_blank"><button class="button" type="button">View Project</button></a> <button class="button" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script> 
+	<script src="js/bootstrap-modal-ios.js">
+	</script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="js/bootstrap-modal-ios.js"></script>
 </html>
