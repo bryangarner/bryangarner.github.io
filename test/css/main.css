@@ -25,7 +25,6 @@ img {
 	-ms-user-select: none;
 	user-select: none;
 }
-.projects .project-thumbnail:hover {/*add some kind hover animation like grow or something */}
 .projects .space {
 	padding-bottom: 25px;
 }
@@ -57,10 +56,6 @@ img {
 }
 .modal-header {
 	border-bottom: none;
-}
-.modal-header .close {
-	margin-right: 10px;
-	color: #333;
 }
 .modal-title {
 	margin-left: 15px;
@@ -99,6 +94,7 @@ img {
 	max-width: 800px;
 	margin: 0 auto;
 	border: none;
+    color: #333;
 }
 .modal-footer {
 	padding-bottom: 1.5rem;
@@ -155,6 +151,7 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .bg-img-blue{
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -164,7 +161,7 @@ img {
 .bg-img-blue:hover{
       box-shadow: 0 19px 38px rgba(3, 56, 198,0.30), 0 15px 12px rgba(33, 210, 255,0.22);
     border-radius: 5px;
-	transform: translate(0px, -8px)
+	transform: translate(0px, -8px);
 }
 
 .bg-img-red:before {
@@ -178,6 +175,7 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .bg-img-red{
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -185,9 +183,9 @@ img {
     border-radius: 5px;
 }
 .bg-img-red:hover{
-      box-shadow: 0 19px 38px rgba(255, 229, 59,0.30), 0 15px 12px rgba(255, 37, 37,0.22);
+    box-shadow: 0 19px 38px rgba(255, 229, 59,0.30), 0 15px 12px rgba(255, 37, 37,0.22);
     border-radius: 5px;
-    transform: translate(0px, -8px)
+    transform: translate(0px, -8px);
 }
 
 .bg-img-green:before {
@@ -201,6 +199,7 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .bg-img-green{
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -210,7 +209,7 @@ img {
 .bg-img-green:hover{
       box-shadow: 0 19px 38px rgba(8, 174, 234,0.30), 0 15px 12px rgba(42, 245, 152,0.22);
     border-radius: 5px;
-    transform: translate(0px, -8px)
+    transform: translate(0px, -8px);
 }
 .bg-img-purple:before {
 	content: '';
@@ -223,6 +222,17 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bg-img-purple{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
+}
+.bg-img-purple:hover{
+      box-shadow: 0 19px 38px rgba(33, 212, 253,0.30), 0 15px 12px rgba(183, 33, 255,0.22);
+    border-radius: 5px;
+    transform: translate(0px, -8px);
 }
 .bg-img-watermelon:before {
 	content: '';
@@ -235,6 +245,17 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bg-img-watermelon{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
+}
+.bg-img-watermelon:hover{
+      box-shadow: 0 19px 38px rgba(59, 255, 241,0.30), 0 15px 12px rgba(255, 37, 37,0.22);
+    border-radius: 5px;
+    transform: translate(0px, -8px);
 }
 .bg-img-dark:before {
 	content: '';
@@ -247,6 +268,17 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bg-img-dark{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
+}
+.bg-img-dark:hover{
+      box-shadow: 0 19px 38px rgba(82, 172, 255,0.30), 0 15px 12px rgba(237, 120, 5,0.22);
+    border-radius: 5px;
+    transform: translate(0px, -8px);
 }
 .bg-img-yellow:before {
 	content: '';
@@ -259,6 +291,17 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bg-img-yellow{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
+}
+.bg-img-yellow:hover{
+      box-shadow: 0 19px 38px rgba(250, 35, 76,0.30), 0 15px 12px rgba(255, 225, 37,0.22);
+    border-radius: 5px;
+    transform: translate(0px, -8px);
 }
 .bg-img-pink:before {
 	content: '';
@@ -271,4 +314,15 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bg-img-pink{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
+}
+.bg-img-pink:hover{
+      box-shadow: 0 19px 38px rgba(60, 217, 251,0.30), 0 15px 12px rgba(245, 63, 70,0.22);
+    border-radius: 5px;
+    transform: translate(0px, -8px);
 }
