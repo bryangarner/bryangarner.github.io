@@ -62,11 +62,8 @@ img{
 		font-size: 9.6px
 	}
 }
-.modal-header {
-	border-bottom: none;
-}
 .modal-title {
-	margin-left: 15px;
+	margin-left:55px;
 	color: #333;
 }
 .modal-footer {
