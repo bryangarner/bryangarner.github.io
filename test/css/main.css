@@ -2,9 +2,18 @@ body {
 	background-color: #fff;
 	font-family: 'Varela Round', sans-serif;
 }
-img {
+img{
+    max-width: 100%;
+}
+.tiles {
 	max-width: 100%;
 	border-radius: 5px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.tiles:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 @media screen and (min-width: 576px) {
 	.container {
@@ -63,12 +72,7 @@ img {
 .modal-footer {
 	border-top: 0 none;
 }
-.modal-open .modal {
-	top: 0;
-	bottom: 0;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
+
 .modal-open .modal.fade .modal-dialog {
 	height: 100%;
 	margin: 0 auto;
@@ -87,17 +91,12 @@ img {
 	pointer-events: all;
 	padding: 10px;
 }
-.no-scroll, .no-scroll body {
-	overflow: hidden;
-}
+
 .modal-content {
 	max-width: 800px;
 	margin: 0 auto;
 	border: none;
 	color: #333;
-}
-.modal-footer {
-	padding-bottom: 1.5rem;
 }
 .button {
 	border: none;
@@ -157,8 +156,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-blue {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -188,8 +185,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-red {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -219,8 +214,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-green {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -250,8 +243,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-purple {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -281,8 +272,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-watermelon {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -313,8 +302,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-dark {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -344,8 +331,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-yellow {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -375,8 +360,6 @@ img {
 	opacity: .55;
 	border-radius: 5px;
 	pointer-events: none;
-	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-img-pink {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
