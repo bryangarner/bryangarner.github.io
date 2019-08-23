@@ -53,6 +53,9 @@ img{
 		font-size: 9.6px
 	}
 }
+body.modal-open {
+    overflow: hidden;
+}
 .modal-title {
 	color: #333;
 }
