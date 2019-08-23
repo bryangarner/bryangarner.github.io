@@ -84,12 +84,8 @@ img{
 	overflow-y: auto;
 	overflow-x: none;
 	-webkit-overflow-scrolling: touch;
-	-webkit-transform: none;
-	    -ms-transform: none;
-	        transform: none;
 	max-width: none;
-	pointer-events: all;
-	padding: 10px;
+	padding: 15px;
 }
 
 .modal-content {
