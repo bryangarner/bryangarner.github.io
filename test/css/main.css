@@ -56,10 +56,6 @@ img{
 .modal-title {
 	color: #333;
 }
-.modal-footer {
-	border-top: none;
-}
-
 .modal-open .modal.fade .modal-dialog {
 	position: absolute;
 	left: 0;

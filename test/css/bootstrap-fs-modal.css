@@ -50,17 +50,6 @@
     width: 0.5em;
     transform: rotate(-135deg);
   }
-  .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-footer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0;
-    margin: 0 10px 0 0;
-    height: 50px;
-    min-height: 50px;
-    line-height: 50px;
-    background-color: #f8f8f8;
-  }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-footer .btn {
     border: none;
     background-color: transparent;
@@ -72,7 +61,7 @@
     color: #007bff;
   }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn:hover, .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn:active, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-footer .btn:hover, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-footer .btn:active {
-    text-decoration: underline;
+    text-decoration: none;
   }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn[data-dismiss="modal"], .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-footer .btn[data-dismiss="modal"] {
     display: none;
