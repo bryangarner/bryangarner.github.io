@@ -22,7 +22,8 @@
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .modal-title, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-header .modal-title {
     white-space: nowrap;
     line-height: 50px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 900;
   }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .close, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-header .close {
     float: none;
