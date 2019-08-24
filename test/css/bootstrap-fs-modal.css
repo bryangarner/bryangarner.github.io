@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .modal.modal-fullscreen, .bootstrap-fs-modal .modal {
     box-shadow: 0px 0px 0px 100px white;
   }
@@ -22,7 +22,7 @@
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .modal-title, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-header .modal-title {
     white-space: nowrap;
     line-height: 50px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .close, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-header .close {
     float: none;
@@ -89,7 +89,7 @@
     margin: 0 0 0 18px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .modal.modal-fullscreen .modal-dialog .modal-content, .bootstrap-fs-modal .modal .modal-dialog .modal-content {
     max-height: calc(100vh - 60px);
   }
