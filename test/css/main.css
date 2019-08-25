@@ -299,8 +299,8 @@ img {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #52ACFF), to(#ed7805));
 	background-image: -o-linear-gradient(top, #52ACFF 25%, #ed7805 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #52ACFF), to(#ed7805));
 	background-image: linear-gradient(180deg, #52ACFF 25%, #ed7805 100%);
 	opacity: .55;
 	border-radius: 5px;
