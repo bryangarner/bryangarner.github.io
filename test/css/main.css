@@ -19,7 +19,7 @@ img {
 }
 .navbar-text {
 	position: absolute;
-	margin-top: 30px;
+    margin-top: -25px;
 	font-size: 15px;
 	color: #333;
 }
@@ -66,7 +66,7 @@ img {
 	}
 	.navbar-text {
 		position: absolute;
-		margin-top: 18px;
+        margin-top: -20px;
 		font-size: 10px;
 	}
 	.nav-link {
@@ -86,6 +86,9 @@ img {
 		font-size: 9.6px
 	}
 }
+.close:focus{
+   outline:none;
+  }
 .modal-title {
 	color: #333;
 }
