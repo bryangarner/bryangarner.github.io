@@ -1,0 +1,136 @@
+/**
+* Template Name: Appland - v4.0.1
+* Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #585a61;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #585a61;
+  text-decoration: none;
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h3{
+    font-family: "Helvetica Neue";
+    font-style: italic; 
+    font-size: 20px;
+}
+
+.container{margin-bottom: 100px;}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0 100px 0;
+  
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #5777ba;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h2 {
+  color: #515f7d;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+#hero h2:hover {
+  cursor: default;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    text-align: center;
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+.underline {
+  text-decoration: underline;
+    transition: all .1s ease-in-out; 
+    transform: scale(1.1); 
+}
+
+
+.image1{
+    margin-top: -60px;
+}
+
+
+.image_hover{
+    z-index: 9999; transition: all .1s ease-in-out; 
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+.art{
+    position: absolute;
+     top: 250px;
+    left: 40px;
+    visibility: hidden;
+}
+
+.architecture{
+    position: absolute;
+     top: -50px;
+    left: 480px;
+    visibility: hidden;
+}
+
+.planning{
+    position: absolute;
+     top: 450px;
+    left: 180px;
+    visibility: hidden;
+}
+
+.unhide{
+  display: block !important;  
+}
+
+.hide{
+    display: none !important;
+}
